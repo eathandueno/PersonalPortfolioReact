@@ -1,31 +1,49 @@
 .header{
   display: flex;
   border-bottom: 5px solid;
+  width: 100%;
+  top: 0px;
   flex-direction: row-reverse;
-  background-color: #feddfe;
+  background-color: #AAD2BA;
+  justify-content: space-between;
+  position:absolute;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+body{
+  background-color: #D9FFF5;
+}
+.title{
+  margin-left: 50px;
+  color: #1D1E18;
 }
 .links{
   margin: 10px;
-  color: grey;
+  align-items: center;
+  color: #1D1E18;
   padding: 10px;
   text-decoration: none;
+  font-size: larger;
 }
 * {
-  font-family: Sans-serif;
+  font-family: Open Sans,sans-serif;
 }
 .profile{
-  width: 25%;
-  height: 25%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
 }
 .main {
   display: flex;
   margin: 10px;
   align-items: center;
+  margin:100px ;
+
 }
 .projects {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 100px;
 }
 li > ul > li{
   font-size: small;
@@ -36,10 +54,48 @@ li > ul > li{
   grid-template-columns: auto auto auto;
   justify-content: center;
   align-items: center;
+  padding: 100px ;
 
 }
 .project-individual{
   display: flex;
   flex-direction: column;
-  margin:10px;
+  margin:30px;
+}
+.skills_btns{
+  border-radius: 5px;
+  border: gray;
+  background-color: rgba(128, 128, 128, 0.384);
+  padding: 15px;
+  width: min-content;
+  margin: 10px;
+}
+.skills_btns:hover{
+  box-shadow: 5px 5px 5px 5px;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+.about-desc{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.box-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contact{
+  display: flex;
+  margin: 200px;
+  background-color: #AAD2BA;
+  padding: 25px;
+  border-radius: 25px;
+  border-style: solid;
+}
+.label{
+  font-weight: 600;
 }
