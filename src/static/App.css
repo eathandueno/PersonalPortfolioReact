@@ -10,9 +10,8 @@
   height: fit-content;
   padding-bottom: 10px;
 }
-body{
-  background-color: #D9FFF5;
-}
+
+
 .title{
   margin-left: 50px;
   color: #1D1E18;
@@ -25,8 +24,10 @@ body{
   text-decoration: none;
   font-size: larger;
 }
+
 * {
   font-family: Open Sans,sans-serif;
+  border: 1px solid red;
 }
 .profile{
   width: 400px;
@@ -38,6 +39,7 @@ body{
   margin: 10px;
   align-items: center;
   margin:100px ;
+  transition-delay: 200ms;
 
 }
 .projects {
@@ -89,13 +91,62 @@ li > ul > li{
   grid-template-columns: 1fr 1fr 1fr;
 }
 .contact{
-  display: flex;
-  margin: 200px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: fit-content;
   background-color: #AAD2BA;
-  padding: 25px;
+  padding: 50px;
   border-radius: 25px;
   border-style: solid;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.red-background{
+  background-color: rgb(240, 70, 70);
+  color: white;
+}
+.red{
+  color: red;
+}
+.yellow{
+  color: #FFCE44;
+}
+.google{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.github{
+  background-color: black;
+  color: white;
+}
+.contact-child{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+.contact-child > * {
+  margin-left: 10px;
 }
 .label{
   font-weight: 600;
+}
+.submit, .google {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.submit:hover{
+  background-color: #1D1E18;
+  color: white;
+}
+.icon{
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
 }

@@ -1,22 +1,43 @@
-import React from 'react'
-import Form from 'react-bootstrap/Form'
+import React, {useState} from 'react';
+import Form from 'react-bootstrap/Form';
+import {AiOutlineMail, AiFillGithub, AiFillYoutube} from 'react-icons/ai'
 const Contact = () => {
+
   return (
     <div className='contact'>
-      <Form>
-        <Form.Group className='mb-3' controlId='formName'>
-          <Form.Label className='label'>Name</Form.Label>
-          <Form.Control type='text' placeholder='Name' />
-        </Form.Group>     
-        <Form.Group className='mb-3' controlId='formEmail'>
-          <Form.Label className='label'>Email</Form.Label>
-          <Form.Control type='email' placeholder='Email' />
-        </Form.Group> 
-        <Form.Group>
-          <Form.Label className='label'>Message</Form.Label>
-          
-        </Form.Group>
-      </Form>
+       <div className='contact-child'> 
+        <div className='icon'>
+        <AiOutlineMail color='blue' size={30}/>
+        </div>
+        <a className='submit' href="mailto:eathandueno@gmail.com">
+        <div className='google'>
+
+          <span >M</span>
+          <span className='red'>y</span>
+          <span className='yellow'>G</span>
+          <span className=''>m</span>
+          <span className='yellow'>a</span>
+          <span className='red'>i</span>
+          <span>l</span>
+        </div>
+
+        </a>
+      </div>
+      <div className='contact-child'> 
+        <div className='icon'>
+          <AiFillGithub size={30}/>
+
+        </div>
+        <a className='submit github' href="https://github.com/eathandueno">My Github</a>
+      </div>
+      <div className='contact-child'> 
+        <div className='icon'>
+          <AiFillYoutube  size={30}/>
+
+        </div>
+      
+        <a className='submit red-background' href="https://github.com/eathandueno">My Youtube</a>
+      </div>
 
     </div>
     

@@ -1,13 +1,16 @@
 import React from 'react'
 import profilePic from '../static/linkedInProfile.jpg'
+
+
 const Home = () => {
+  
   return (
-    <div>
+    <div className='body'>
       
       <section className='main'>
         <div>
         <h4><strong>About me</strong></h4>
-        <div className='about-desc'>
+        <div className='about-desc' >
           <p>Hello! Welcome to my personal portfolio website. The more I grow as a developer I plan on implementing my front-end skills here to keep track of growth. I am an Air Force veteran and college student at Boise State University</p> 
           <p>More Details about me</p>
         </div>
